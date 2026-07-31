@@ -1,2 +1,1 @@
-# portfolio
-Welcome to my personal portfolio.
+Replace images/profile.png, add your links and photos.
