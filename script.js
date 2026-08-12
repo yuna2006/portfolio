@@ -3,9 +3,6 @@ let i=0;
 const t=document.getElementById('typing');
 function change(){t.textContent=words[i];i=(i+1)%words.length;}
 change();setInterval(change,2200);
-// ========================================
-// ✨ MOUSE GLOW
-// ========================================
 
 const glow = document.createElement("div");
 
@@ -22,10 +19,6 @@ document.addEventListener("mousemove", (event) => {
 
 });
 
-
-// ========================================
-// ✦ CLICK STAR EFFECT
-// ========================================
 
 document.addEventListener("click", (event) => {
 
