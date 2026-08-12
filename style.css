@@ -1812,3 +1812,70 @@ header::after {
     }
 
 }
+.sakura {
+    position: fixed;
+
+    top: -40px;
+
+    pointer-events: none;
+
+    z-index: 999;
+
+    user-select: none;
+
+    animation-name: sakuraFall;
+
+    animation-timing-function: linear;
+
+    animation-iteration-count: 1;
+
+    filter:
+        drop-shadow(0 0 5px rgba(244, 114, 182, 0.4));
+}
+
+
+@keyframes sakuraFall {
+
+    0% {
+        transform:
+            translate3d(0, -40px, 0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    25% {
+        transform:
+            translate3d(60px, 25vh, 0)
+            rotate(90deg);
+    }
+
+    50% {
+        transform:
+            translate3d(-50px, 50vh, 0)
+            rotate(180deg);
+    }
+
+    75% {
+        transform:
+            translate3d(80px, 75vh, 0)
+            rotate(270deg);
+    }
+
+    90% {
+        opacity: 0.8;
+    }
+
+    100% {
+        transform:
+            translate3d(-30px, 110vh, 0)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+
+}
